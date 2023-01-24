@@ -1,0 +1,66 @@
+.section.products#products
+  .main-container
+    h2.section__title.products__title o que #[span.br você pode] ganhar
+    .section__cont
+      .section__text 
+        p 
+          b Conheça os nossos benefícios e veja por que pagar em dia é bom, mas pagar antes é melhor ainda.
+
+    .products-list
+      .products-list__item.products-list__item--1
+        .products-list__inner
+          .products-list__img-w
+            img(src="img/product-1.png", alt="").products-list__img
+          
+          .products-list__price-wrap
+            .products-list__price-label A partir de:
+            .products-list__price 10 #[span pontos]
+          .products-list__star
+
+          h3.products-list__title Use seus pontos para 
+            br 
+            | participar dos nossos 
+            br 
+            | sorteios de IPhones.
+
+      .products-list__item.products-list__item--2
+        .products-list__inner
+          .products-list__img-w
+            <picture>
+                <source srcset="img/product-2-desk.png" media="(min-width: 1024px)">
+                img(src="img/product-2.png", alt="").products-list__img
+            </picture>
+                      
+          .products-list__price-wrap
+            .products-list__price-label A partir de:
+            .products-list__price 1500 #[span pontos]
+          .products-list__star
+            
+          h3.products-list__title Escolha seu benefícios: 
+            br 
+            | eletrodomésticos, 
+            br 
+            | eletrônicos, informática e 
+            br 
+            | muito mais.
+
+      .products-list__item.products-list__item--3
+        .products-list__inner
+          .products-list__img-w
+            <picture>
+                <source srcset="img/product-3-desk.png" media="(min-width: 1024px)">
+                img(src="img/product-3.png", alt="").products-list__img
+            </picture>                      
+          .products-list__price-wrap
+            .products-list__price-label A partir de:
+            .products-list__price 20000 #[span pontos]
+          .products-list__star
+
+          h3.products-list__title Troque seus pontos 
+            br 
+            | acumulados 
+            br 
+            | por passagens!
+
+    .products-list__footer
+      a(href="#calculator").btn.btn--dark.btn--lg.anchor-link entrar na lista exclusiva

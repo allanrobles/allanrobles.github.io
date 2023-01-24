@@ -1,0 +1,32 @@
+.section.calculator#calculator
+  .main-container
+    h2.section__title.calculator__title calcule seus #[span.br pontos]
+    .section__cont
+      .section__text
+        p Para simular quantos pontos vale o seu pagamento adiantado, é simples: #[b use a nossa calculadora]. Ela gera um cálculo entre o valor do seu aluguel e os dias de antecedência que você pagaria e indica quantos pontos você geraria a cada mês.
+      form().calculator__form
+        .form-box
+          .form-row.form-row--info-label
+            label.form-row__title Valor do aluguel:
+            .form-row__info-label R$
+            input(type="text" value="0,00").form-row__input#valor-val
+
+        .break
+
+        .form-box.form-box--range
+          .form-row
+            label.form-row__title dias antes do vencimento:
+            .form-row__range-box
+              .form-row__range-num.form-row__range-num--left 5
+              .form-row__range-cont
+                input(type="range" value="5" min="5" max="30" step="1" id="range-value" oninput="showVal(this.value)" onchange="showVal(this.value)").form-row__range
+              .form-row__range-num.form-row__range-num--right#cur-value 5
+          .form-box__footer
+            button.btn.btn--cold-purple#calculate Calcule
+
+        .form-box.form-box--pontos
+          .form-row
+            label.form-row__title Pontos:
+            input(type="text" value="" id="pontos-value").form-row__input
+          .form-box__footer
+            button(data-modal="modal-feedback").btn.modal-btn entrar na lista exclusiva

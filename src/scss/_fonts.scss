@@ -1,0 +1,92 @@
+@font-face {
+	font-family: 'F37 Judge';
+	src: url('#{$rootUrlFonts}F37/F37Judge-Bold.woff2') format('woff2'),
+			url('#{$rootUrlFonts}F37/F37Judge-Bold.woff') format('woff'),
+			url('#{$rootUrlFonts}F37/F37Judge-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'F37 Judge';
+	src: url('#{$rootUrlFonts}F37/F37Judge-Regular.woff2') format('woff2'),
+			url('#{$rootUrlFonts}F37/F37Judge-Regular.woff') format('woff'),
+			url('#{$rootUrlFonts}F37/F37Judge-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'F37 Judge';
+	src: url('#{$rootUrlFonts}F37/F37Judge-Medium.woff2') format('woff2'),
+			url('#{$rootUrlFonts}F37/F37Judge-Medium.woff') format('woff'),
+			url('#{$rootUrlFonts}F37/F37Judge-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+
+@font-face {
+	font-family: 'F37 Judge Condensed';
+	src: url('#{$rootUrlFonts}F37/F37Judge-BoldCondensed.woff2') format('woff2'),
+			url('#{$rootUrlFonts}F37/F37Judge-BoldCondensed.woff') format('woff'),
+			url('#{$rootUrlFonts}F37/F37Judge-BoldCondensed.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'F37 Judge Condensed';
+	src: url('#{$rootUrlFonts}F37/F37Judge-RegularCondensed.woff2') format('woff2'),
+			url('#{$rootUrlFonts}F37/F37Judge-RegularCondensed.woff') format('woff'),
+			url('#{$rootUrlFonts}F37/F37Judge-RegularCondensed.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'F37 Judge Condensed';
+	src: url('#{$rootUrlFonts}F37/F37Judge-MediumCondensed.woff2') format('woff2'),
+			url('#{$rootUrlFonts}F37/F37Judge-MediumCondensed.woff') format('woff'),
+			url('#{$rootUrlFonts}F37/F37Judge-MediumCondensed.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('#{$rootUrlFonts}Switzer/Switzer-Regular.woff2') format('woff2'),
+       url('#{$rootUrlFonts}Switzer/Switzer-Regular.woff') format('woff'),
+       url('#{$rootUrlFonts}Switzer/Switzer-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('#{$rootUrlFonts}Switzer/Switzer-Light.woff2') format('woff2'),
+       url('#{$rootUrlFonts}Switzer/Switzer-Light.woff') format('woff'),
+       url('#{$rootUrlFonts}Switzer/Switzer-Light.ttf') format('truetype');
+       font-weight: 300;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: 
+		// url('.#{$rootUrlFonts}Switzer/Switzer-Bold.woff2') format('woff2'),
+       url('#{$rootUrlFonts}Switzer/Switzer-Bold.woff') format('woff'),
+       url('#{$rootUrlFonts}Switzer/Switzer-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}

@@ -1,0 +1,24 @@
+.feedback
+  .feedback__header
+    .main-container
+      img(src="img/logo-lg.png", alt="").feedback__header-logo
+      button.modal-close
+        svg.icon.icon--close
+          use(href="img/sprite.svg#close")
+
+  .main-container
+    .feedback__cont
+      .form-row
+        label.form-row__title nome do inquilino
+        input(type="text" value="Victor Matos Garcia" ).form-row__input
+
+      .form-row
+        label.form-row__title EMAIL
+        input(type="email" value="vmatosgarcia@gmail.com" ).form-row__input
+        
+      .form-row
+        label.form-row__title telefone
+        input(type="tel" value="85 9 9702 7226" ).form-row__input
+      
+      .feedback__footer
+        button.btn.btn--cold-purple.feedback__success inscreva-se

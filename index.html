@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Title your site</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div id="main">
+    <div class="header">
+      <div class="header__top">
+        <div class="main-container">
+          <div class="header__logo-wrap"><a class="header__logo anchor-link" href="#main"><img class="header__logo-img"
+                src="img/logo.png" alt=""></a></div>
+          <button class="header__menu-btn" id="menu-btn">
+            <svg class="icon icon--menu">
+              <use href="img/sprite.svg#menu"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="header__nav">
+        <div class="main-container">
+          <ul class="header__menu">
+            <li class="header__menu-item"><a class="header__menu-link header__menu-link--home anchor-link" href="#main"
+                data-text="Home">Home</a></li>
+            <li class="header__menu-item"><a class="header__menu-link anchor-link" href="#calculator"
+                data-text="Calcule seus pontos">Calcule seus pontos</a></li>
+            <li class="header__menu-item"><a class="header__menu-link anchor-link" href="#products"
+                data-text="O que você pode ganhar">O que você pode ganhar</a></li>
+          </ul><a class="header__phone" href="https://wa.me/5511920141849" target="_blank">Contato </a>
+        </div>
+      </div>
+    </div>
+    <div class="section welcome">
+      <div class="main-container"><a class="welcome__logo" href=""> <img class="welcome__logo-img"
+            src="img/logo-desktop.png" alt=""></a>
+        <h2 class="section__title welcome__title">se adianta <span class="br">e ganha.</span></h2>
+        <div class="section__cont">
+          <div class="welcome__img-w">
+            <picture>
+              <source srcset="img/welcome-img-desk.png" media="(min-width: 1024px)"><img class="welcome__img"
+                src="img/welcome-img-mob.png" alt="">
+            </picture>
+          </div>
+          <div class="welcome__text">
+            <p>O <b>Lastro Points</b> é o primeiro programa de pontos sobre o pagamento do seu aluguel. Funciona assim:
+              você entra na nossa lista exclusiva, se adianta, ganha pontos e troca por benefícios: celulares,
+              eletrônicos, passagens e muito mais.</p>
+            <h3>Se pagar em dia é bom, pagar antes é melhor ainda.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section calculator" id="calculator">
+      <div class="main-container">
+        <h2 class="section__title calculator__title">calcule seus <span class="br">pontos</span></h2>
+        <div class="section__cont">
+          <div class="section__text">
+            <p>Para simular quantos pontos vale o seu pagamento adiantado, é simples: <b>use a nossa calculadora</b>.
+              Ela gera um cálculo entre o valor do seu aluguel e os dias de antecedência que você pagaria e indica
+              quantos pontos você geraria a cada mês.</p>
+          </div>
+          <form class="calculator__form">
+            <div class="form-box">
+              <div class="form-row form-row--info-label">
+                <label class="form-row__title">Valor do aluguel:</label>
+                <div class="form-row__info-label">R$</div>
+                <input class="form-row__input" type="text" value="0,00" id="valor-val">
+              </div>
+            </div>
+            <div class="break"></div>
+            <div class="form-box form-box--range">
+              <div class="form-row">
+                <label class="form-row__title">dias antes do vencimento:</label>
+                <div class="form-row__range-box">
+                  <div class="form-row__range-num form-row__range-num--left">5</div>
+                  <div class="form-row__range-cont">
+                    <input class="form-row__range" type="range" value="5" min="5" max="30" step="1" id="range-value"
+                      oninput="showVal(this.value)" onchange="showVal(this.value)">
+                  </div>
+                  <div class="form-row__range-num form-row__range-num--right" id="cur-value">5</div>
+                </div>
+              </div>
+              <div class="form-box__footer">
+                <button class="btn btn--cold-purple" id="calculate">Calcule</button>
+              </div>
+            </div>
+            <div class="form-box form-box--pontos">
+              <div class="form-row">
+                <label class="form-row__title">Pontos:</label>
+                <input class="form-row__input" type="text" value="" id="pontos-value">
+              </div>
+              <div class="form-box__footer">
+                <button class="btn modal-btn" data-modal="modal-feedback">entrar na lista exclusiva</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="section products" id="products">
+      <div class="main-container">
+        <h2 class="section__title products__title">o que <span class="br">você pode</span> ganhar</h2>
+        <div class="section__cont">
+          <div class="section__text">
+            <p> <b>Conheça os nossos benefícios e veja por que pagar em dia é bom, mas pagar antes é melhor ainda.</b>
+            </p>
+          </div>
+        </div>
+        <div class="products-list">
+          <div class="products-list__item products-list__item--1">
+            <div class="products-list__inner">
+              <div class="products-list__img-w"><img class="products-list__img" src="img/product-1.png" alt=""></div>
+              <div class="products-list__price-wrap">
+                <div class="products-list__price-label">A partir de:</div>
+                <div class="products-list__price">10 <span>pontos</span></div>
+              </div>
+              <div class="products-list__star"></div>
+              <h3 class="products-list__title">Use seus pontos para <br>participar dos nossos <br>sorteios de IPhones.
+              </h3>
+            </div>
+          </div>
+          <div class="products-list__item products-list__item--2">
+            <div class="products-list__inner">
+              <div class="products-list__img-w">
+                <picture>
+                  <source srcset="img/product-2-desk.png" media="(min-width: 1024px)"><img class="products-list__img"
+                    src="img/product-2.png" alt="">
+                </picture>
+              </div>
+              <div class="products-list__price-wrap">
+                <div class="products-list__price-label">A partir de:</div>
+                <div class="products-list__price">1500 <span>pontos</span></div>
+              </div>
+              <div class="products-list__star"></div>
+              <h3 class="products-list__title">Escolha seu benefícios: <br>eletrodomésticos, <br>eletrônicos,
+                informática e <br>muito mais.</h3>
+            </div>
+          </div>
+          <div class="products-list__item products-list__item--3">
+            <div class="products-list__inner">
+              <div class="products-list__img-w">
+                <picture>
+                  <source srcset="img/product-3-desk.png" media="(min-width: 1024px)"><img class="products-list__img"
+                    src="img/product-3.png" alt="">
+                </picture>
+              </div>
+              <div class="products-list__price-wrap">
+                <div class="products-list__price-label">A partir de:</div>
+                <div class="products-list__price">20000 <span>pontos</span></div>
+              </div>
+              <div class="products-list__star"></div>
+              <h3 class="products-list__title">Troque seus pontos <br>acumulados <br>por passagens!</h3>
+            </div>
+          </div>
+        </div>
+        <div class="products-list__footer"><a class="btn btn--dark btn--lg anchor-link" href="#calculator">entrar na
+            lista exclusiva</a></div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="main-container"> <a class="footer__logo" href=""><img class="footer__logo-img"
+            src="img/logo-footer.svg" alt=""></a>
+        <div class="footer__cont"> <a class="footer__contato" href="https://wa.me/5511920141849" target="_blank">contato
+          </a><a class="footer__viber" href="https://wa.me/5511920141849" target="_blank">Se ficou com alguma dúvida,
+            entra em contato com a gente.</a></div>
+      </div>
+    </div>
+    <div class="modal" id="modal-feedback">
+      <div class="feedback">
+        <div class="feedback__header">
+          <div class="main-container"><img class="feedback__header-logo" src="img/logo-lg.png" alt="">
+            <button class="modal-close">
+              <svg class="icon icon--close">
+                <use href="img/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="feedback__cont">
+            <div class="form-row">
+              <label class="form-row__title">nome do inquilino</label>
+              <input class="form-row__input" type="text" value="Victor Matos Garcia">
+            </div>
+            <div class="form-row">
+              <label class="form-row__title">EMAIL</label>
+              <input class="form-row__input" type="email" value="vmatosgarcia@gmail.com">
+            </div>
+            <div class="form-row">
+              <label class="form-row__title">telefone</label>
+              <input class="form-row__input" type="tel" value="85 9 9702 7226">
+            </div>
+            <div class="feedback__footer">
+              <button class="btn btn--cold-purple feedback__success">inscreva-se</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/simple-mask-money.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

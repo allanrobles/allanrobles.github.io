@@ -1,0 +1,106 @@
+.footer {
+  color: #fff;
+  background: #000000;
+  padding: 30px 0;
+
+  &__logo {
+    display: block;
+    text-decoration: none;
+    width: 126px;
+
+    &-img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__cont {
+    margin-top: 30px;
+  }
+
+  &__contato {
+    display: none;
+  }
+
+  &__viber {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    max-width: 275px;
+    padding-left: 46px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #FFFFFF;
+
+    &:before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      background: url("#{$rootUrl}viber.svg") no-repeat center;
+      background-size: contain;
+      width: 33px;
+      height: 33px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  .footer {
+    .main-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    &__cont {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 0 0 0 auto;
+    }
+
+    &__contato {
+      display: block;
+      color: #fff;
+      font-family: $fontF37JudgeCondensed;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 1;
+      margin-right: 30px;
+      text-decoration: none;
+    }
+
+    &__viber {
+      max-width: 195px;
+    }
+  }
+}
+
+@media(min-width: 1024px) {
+  .footer {
+    padding: 56px 0;
+
+    &__logo {
+      width: 197px;
+    }
+
+    &__contato {
+      margin-right: 40px;
+    }
+
+    &__viber {
+      padding-left: 85px;
+      max-width: 235px;
+
+      &:before {
+        width: 42px;
+        height: 42px;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.h1, h1,
+.h2, h2,
+.h3, h3,
+.h4, h4,
+.h5, h5,
+.h6, h6 {
+ 
+}
+
+h2 {
+
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.section {
+  scroll-margin-top: 100px;
+
+  @media(min-width: 1024px) {
+    scroll-margin-top: 90px;
+  }
+
+  &__title {
+    font-family: $fontF37JudgeCondensed;
+    margin: 0 0 20px;
+    position: relative;
+    z-index: 2;
+    font-weight: 700;
+    font-size: 86px;
+    line-height: 0.872;
+    color: #000000;
+
+    @media(min-width: 370px) {
+      font-size: 90px;
+    }
+  
+    &:before {
+      display: block;
+      position: absolute;
+      content: "";
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+    }
+  }
+
+  &__cont {
+    padding-left: 40px;
+    
+    @media(min-width: 370px) {
+      padding-left: 64px;
+      padding-right: 10px;
+    }
+  }
+
+  &__text {
+    line-height: 1.5;
+  }
+}
+
+.br {
+  display: block;
+}
+
+
+
+@media(min-width: 1280px) {
+  .section {
+    &__title {
+      font-size: 156px;
+    }
+  }
+}
